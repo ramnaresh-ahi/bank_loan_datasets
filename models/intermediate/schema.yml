@@ -1,0 +1,38 @@
+
+
+version: 2
+
+models:
+  - name: int_curr_application
+    description: "This table contains prime_applicant's details."
+    columns:
+      - name: income_amt
+        description: "Income of applicant"
+      - name: credit_amt
+        description: "credit amount of loan. "
+      - name: annuity_amt
+        description: "An Annuity is a loan with a monthly repayment, which is always the same amount."
+      - name: suite_type
+        description: "Who was accompanying client when he was applying for the loan."
+      - name: income_type
+        description: "Clients income type (businessman, working, maternity leave,…)."
+      
+
+  - name: int_prev_application
+    description: "This table contains previous client's details"
+    columns:
+      - name: contract_type
+        description: "Contract product type (Cash loan, consumer loan [POS] ,...) of the previous application."
+      - name: down_payment
+        description: "Down payment on the previous application."
+      - name: goods_price
+        description: "Goods price of good that client asked for (if applicable) on the previous application."
+      - name: contract_status
+        description: "Contract status (approved, cancelled, ...) of previous application."
+      - name: client_type
+        description: "Was the client old or new client when applying for the previous application."
+      - name: channel_type
+        description: "Through which channel we acquired the client on the previous application."
+      
+
+      

@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: stg_curr_application
+    description: "Staging model for curr_application table"
+    columns:
+      - name: curr_id
+        description: "Primary key of the curr_application"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_prev_application
+    description: "Staging model for prev_application table"
+    columns:
+      - name: prev_id
+        description: "Primary key of the prev_application"
+        tests:
+          - not_null
+          - unique
+
+      

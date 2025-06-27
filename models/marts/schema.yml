@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fact_bank_loan_info
+    description: "This is a fact table that contains some metrics."
+    columns:
+      - name: curr_id
+        description: "This is a primary key in dim_prime_applicants table used to build relationships."
+        tests:
+          - relationships:
+              to: "{{ ref('dim_prime_applicants') }}"
+              field: curr_id
+
+      - name: prev_id
+        description: "This is a primary key in dim_targeted_applicants table used to build relationships."
+        tests:
+          - relationships:
+              to: "{{ ref('dim_targeted_applicants') }}"
+              field: prev_id
