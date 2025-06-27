@@ -4,10 +4,10 @@ bank_loan_datasets:
     dev:
       type: bigquery
       method: service-account
-      project: analytics-bank-loan
-      dataset: staging
-      location: asia-south1
-      keyfile: C:\Users\hp\Downloads\analytics-bank-loan-cb577c1c6dea.json
+      project: your_project_url
+      dataset: your_database or schema
+      location: your_project_region
+      keyfile: service_account_path
       threads: 1
       job_execution_timeout_seconds: 300
       job_retries: 1
